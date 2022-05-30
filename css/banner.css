@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .contenido_ppal{
     height: 100vh;
     background-image:url(/img/maquinaria.jpg);
@@ -5,7 +8,7 @@
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    width:100vw;
+    width:98vw;
 }
 .sombra{
     position: absolute;
@@ -15,7 +18,7 @@
     -webkit-transform:translate(-50%,-50%) ;
     transform: translate(-50%,-50%);
     padding: 20px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     background-color: rgba(250, 235, 215, 0.527);
@@ -60,25 +63,150 @@
     background-color: rgb(80, 66, 38);
     color: rgb(166, 192, 52);
 }
-/*.sombra-links a:visited{
-background-color: rgb(158, 108, 8);
-    color: rgb(236, 232, 232);
- }*/
  
  .sombra-banner{
     opacity: 0;
-     -webkit-animation:botoncayendo 1s;
+    animation: botoncayendo 1s;
+    /*-webkit-animation:botoncayendo 1s;>*/
      animation-fill-mode: forwards;
  }
  .sombra-banner1{
     opacity: 0;
-     -webkit-animation:botoncayendo 1s;
+    animation: botoncayendo 1s;
+   /* -webkit-animation:botoncayendo 1s;*/
      animation-fill-mode: forwards;
      animation-delay: 0.5s;
  }
  .sombra-banner2{
     opacity: 0;
-     -webkit-animation:botoncayendo 1s;
+    animation: botoncayendo 1s;
+    /* -webkit-animation:botoncayendo 1s;*/
      animation-fill-mode: forwards;
      animation-delay: 1s;
  }
+
+ .trabajotit p {
+    animation: opacity 10s; /*efecto parpadeante*/
+ }
+ 
+ .entrada{
+     background-image: url(/img/fonfi.jfif);
+     background-attachment: fixed;
+     background-position:center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: white;
+ }
+ .item1{
+     animation: movimiento 1s ;
+ }
+ .item2{
+    animation: movimiento 1s ;
+    animation-delay:0.5s ;
+}
+.item3{
+    animation: movimiento 1s ;
+    animation-delay:0.7s ;
+}
+.item4{    
+    animation: movimiento 1s ;
+    animation-delay:1s ;
+}
+.contenido-logos{
+    width: 100px;
+    position: absolute;
+    animation: rotar 10s infinite ease-in;
+	transform-style:preserve-3d;
+    }
+.contenido-logos:hover{ 
+        animation-play-state: paused;
+    }
+.contenido-logos img:nth-child(1){
+  transform: rotateY(18deg) translateZ(500px);
+          }
+.contenido-logos img:nth-child(2){
+  transform: rotateY(36deg) translateZ(500px);
+    }
+.contenido-logos img:nth-child(3){
+  transform: rotateY(54deg) translateZ(500px);
+        }
+.contenido-logos img:nth-child(4){
+  transform: rotateY(72deg)  translateZ(500px);
+    }
+.contenido-logos img:nth-child(5){
+  transform: rotateY(90deg)  translateZ(500px);
+    }
+.contenido-logos img:nth-child(6){
+  transform: rotateY(108deg)   translateZ(500px);
+    }
+.contenido-logos img:nth-child(7){
+  transform: rotateY(126deg)  translateZ(500px);
+}
+.contenido-logos img:nth-child(8){
+  transform: rotateY(144deg)  translateZ(500px);
+}
+.contenido-logos img:nth-child(9){
+  transform: rotateY(180deg)  translateZ(500px);
+}
+.contenido-logos img:nth-child(10){
+  transform: rotateY(198deg)  translateZ(500px);
+} 
+.contenido-logos img:nth-child(11){
+  transform: rotateY(216deg)  translateZ(500px);
+} 
+.contenido-logos img:nth-child(12){
+  transform: rotateY(234deg)  translateZ(500px);
+} 
+.contenido-logos img:nth-child(13){
+  transform: rotateY(252deg) translateZ(500px);
+      } 
+.contenido-logos img:nth-child(14){
+  transform: rotateY(270deg)  translateZ(500px);
+    } 
+.contenido-logos img:nth-child(15){
+  transform: rotateY(288deg) translateZ(500px);
+} 
+.contenido-logos img:nth-child(16){
+  transform: rotateY(306deg)  translateZ(500px);
+  } 
+.contenido-logos img:nth-child(17){
+  transform: rotateY(324deg)  translateZ(500px);
+  } 
+.contenido-logos img:nth-child(18){
+  transform: rotateY(342deg)  translateZ(500px);
+    } 
+.contenido-logos img:nth-child(19){
+    transform: rotateY(360deg)	translateZ(500px);
+    } 
+.contenido-logos img:nth-child(20){
+    transform: rotateY(162deg) translateZ(500px);
+} 
+.contenido-logos img:nth-child(21){
+    transform: rotateY(0deg) translateZ(500px);
+    } 
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

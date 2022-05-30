@@ -20,3 +20,71 @@
         top: 0;
     }
 }
+ 
+@keyframes movimiento {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+@-webkit-keyframes movimiento{
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes transformando{
+    0%, 65%  {background-color: lightsalmon;}
+    15%, 75% {background-color:lightblue;}
+    25%, 85%  {background-color: pink;}
+    40%, 100% {background-color: yellowgreen;}
+    50%  {background-color: rgb(135, 208, 211);}
+  } 
+@-webkit-keyframes transformando{
+    0%, 65%  {background-color: salmon;}
+    15%, 75% {background-color:blue;}
+    25%, 85%  {background-color: lightpink;}
+    40%, 100% {background-color: green;}
+    50%  {background-color: rgb(135, 208, 211);}
+  } 
+@keyframes opacity {
+    0%   {opacity:0;}
+    25%  {opacity:1;}
+    40%  {opacity:0;}
+    50%  {opacity:1;}
+    60%  {opacity:0;}
+    70%  {opacity:1;}
+    85%  {opacity:0;}
+    100% {opacity:1;}
+  }
+@-webkit-keyframes opacity {
+    0%   {opacity:0;}
+    25%  {opacity:1;}
+    40%  {opacity:0;}
+    50%  {opacity:1;}
+    60%  {opacity:0;}
+    70%  {opacity:1;}
+    85%  {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+
+@keyframes rotar {
+  from{transform: rotatey(0deg); }
+  to{transform: rotatey(360deg); }
+}
+@-webkit-keyframes rotar{
+  from{transform: rotatey(0deg); }
+  to{transform: rotatey(360deg); }
+}

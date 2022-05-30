@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="js/index.js">
+    <link rel="stylesheet" href="ext/aos.css">
+    <link rel="stylesheet" href="ext/aos.js">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Indie+Flower&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <title>Rectificadora</title>
 
 </head>
 <body>
     <header> 
-      <!--NAV BAR DE BOOTSTRAP-->
+      <!--NAV BAR DE BOOTSTRAP hay un dropdown que no esta cpnfigurado-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Los Amigos</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
@@ -59,56 +63,140 @@
             <p>Los Amigos</p>
             <hr>
             <div class="sombra-links">
-              <a class="sombra-banner"  href="#">Que trabajos realizamos?</a>
-              <a class="sombra-banner1" href="#">Presupuestos</a>
-              <a class="sombra-banner2" href="#">Patrocinadores</a>
+              <a class="sombra-banner"  href="#trabajosrealizados">Que trabajos realizamos?</a>
+              <a class="sombra-banner1" href="#clientes">Clientes</a>
+              <a class="sombra-banner2" href="#patrocinadores">Patrocinadores</a>
             </div>
         </div>
       </article>
-    </section> 
+ 
+   </section> 
 
-    <section>
-      <div class="sum_contenedor col-md-3 text center">
-          <a data-aos="flip-left" href="#" class="btn btn-secondary btn-md">Visita nuestra tienda</a>
-      </div>
-        <article id="textocontenido">
-            <p id="contenidop2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit facere, autem consequuntur porro nisi placeat obcaecati voluptatibus quidem necessitatibus molestias aut distinctio qui dolorum enim rem accusamus omnis tempora.</p>
-        </article>
-        <div id="imagen2"></div>
-        <article id="destacado">
-        <div>
-            <p id="contenidop3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem tempore quas corrupti, sint enim aliquid ipsam eius. Ducimus dolore natus dicta! Modi tempora quasi culpa magni, commodi cupiditate est expedita?</p>
-        </div>
-        </article>
-       
-        <aside id="imgaside">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/loco3.jpg" class="d-block w-100" alt="publicidad indumentaria">
-          </div>
-          <div class="carousel-item">
-            <img src="img/loco1.jpg" class="d-block w-100" alt="publicidad protector solar">
-          </div>
-          <div class="carousel-item">
-            <img src="img/loco2.jpg" class="d-block w-100" alt="publicidad mecanicos">
-          </div>
-          <div class="carousel-item">
-            <img src="img/loco4.jpg" class="d-block w-100" alt="publicidad helado">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-        </aside>
-    </section>
+  <hr id="trabajosrealizados">
+  <br>   	
+    <div class="trabajotit">
+       <p>Realizamos...</p>
+    </div>
+<article class="contenedorgrid-3columnas">
+     <article class="entrada" data-aos="fade-left">
+   		 <ul>
+           <li class="item1">TAPAS DE CILINDROS</li> 
+           <li class="item2">ADAPTACION GNC</li>
+           <li class="item3">ENCASQUILLADO</li>
+	         <li class="item4">SISTEMAS HELI-COIL</li> 
+         </ul>
+      </article>
 
+  <article class="entrada" data-aos="flip-left">
+   			<img src="img/trabajo1.gif" alt="rectificadora de bielas"class="img" >
+  </article>
+
+  <article class="entrada" data-aos="fade-right">
+     	<ul>
+        <li class="item1">BALANCEO ELECTRONICO</li>
+        <li class="item2">PRUEBAS BOMBA DE ACEITE</li>
+        <li class="item3">RECONSTRUCCION DE ROSCAS</li>
+	      <li class="item4">RECTIFICACION DE MOTORES</li>
+      </ul>
+    </article>
+
+    <article class="entrada" data-aos="fade-left">
+      <img src="img/trabajo3.gif" alt="rectificadora de motores" class="img">
+    </article>
+
+    <article class="entrada" data-aos="flip-left">
+      <ul>
+        <li class="item1">PRUEBAS HIDRAULICAS</li>
+        <li class="item2">SOLDADURAS</li>
+        <li class="item3">EMBUJADOS</li>
+        <li class="item4">RECTIFICACION DE CIGUEÑALES</li>
+       </ul>
+    </article>
+
+    <article class="entrada" data-aos="fade-right">
+      <img src="img/trabajo2.gif" alt="rectificadora de superficies" class="img" >
+    </article>
+ </article>
+
+    <br id="clientes">
+    <br>
+<article>
+<div id="cuerpo">
+<p>Opiniones de algunos de nuestros clientes</p>
+
+  <div id="carouselbootstrap" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/img/opi/opinion1.PNG" class="d-block w-100" alt="Opinion de un cliente">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/opi/opinion2.PNG" class="d-block w-100" alt="Opinion de un cliente...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/opi/opinion3.PNG" class="d-block w-100" alt="Opinion de un cliente...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/opi/opinion4.PNG" class="d-block w-100" alt="Opinion de un cliente...">
+      </div><div class="carousel-item">
+        <img src="/img/opi/opinion5.PNG" class="d-block w-100" alt="Opinion de un cliente...">
+      </div><div class="carousel-item">
+        <img src="/img/opi/opinion6.PNG" class="d-block w-100" alt="Opinion de un cliente...">
+      </div><div class="carousel-item">
+        <img src="/img/opi/opinion7.PNG" class="d-block w-100" alt="Opinion de un cliente...">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <hr>
+<div class="tuopinion">
+  <p>Si queres dejarnos tu opinion </p>
+  <a href="https://g.page/r/CXRp5dO3sIaPEAg/review" target="_blank" class="btn btn-primary btn-lg">Hace click aca!</a>
+</div>
+
+</div>
+
+
+</article>
+
+
+
+<article id="patrocinadores">
+  <hr>
+  <p>Estas marcas confian en nosotros...</p>
+  <hr>
+
+  <div class="contenido-total">
+    <div class="contenido-logos">
+      <img src="/img/logos/1.jfif" alt="patrocinador">
+      <img src="/img/logos/2.jfif" alt="patrocinador">
+      <img src="/img/logos/3.jfif" alt="patrocinador">
+      <img src="/img/logos/4.jfif" alt="patrocinador">
+      <img src="/img/logos/5.jfif" alt="patrocinador">
+      <img src="/img/logos/7.jfif" alt="patrocinador">
+      <img src="/img/logos/8.jfif" alt="patrocinador">
+      <img src="/img/logos/9.jfif" alt="patrocinador">
+      <img src="/img/logos/11.jfif" alt="patrocinador">
+      <img src="/img/logos/12.jfif" alt="patrocinador">
+      <img src="/img/logos/6.png"   alt="patrocinador">
+      <img src="/img/logos/6.jfif" alt="patrocinador">
+      <img src="/img/logos/13.jfif" alt="patrocinador">
+      <img src="/img/logos/14.jfif" alt="patrocinador">
+      <img src="/img/logos/15.jfif" alt="patrocinador">
+      <img src="/img/logos/16.jfif" alt="patrocinador">
+      <img src="/img/logos/17.jfif" alt="patrocinador">
+      <img src="/img/logos/18.jfif" alt="patrocinador">
+      <img src="/img/logos/19.jfif" alt="patrocinador">
+      <img src="/img/logos/20.jfif" alt="patrocinador">
+
+    </div>
+  </div>
+</article>
+
+
+
+<hr>
+<hr>
+<hr>
     <footer>
             <div id="redes">
                 <img src="img/facebook.png" alt="facebook">
@@ -117,15 +205,16 @@
             </div>
             <div id="datos">
                 <p>Calle falsa 123</p>
-                <p>Telef=44890690 Whatsapp=11111111111</p>
+                <p >Telef=44890690 </p>
+                  <a id="wpp"href="https://api.whatsapp.com/send?phone=123456789&text=mensaje">Whatsapp=123456789</a>
                 <p>info@gmail.com</p>
             </div>
-            
+   
 
     </footer>
     <script src="ext/aos.js"></script>
-    <script src="ext/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

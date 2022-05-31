@@ -81,8 +81,8 @@
 
 
 @keyframes rotar {
-  from{transform: rotatey(0deg); }
-  to{transform: rotatey(360deg); }
+  from{transform:translatex(100%); }
+  to{transform: translatex(-100%);}
 }
 @-webkit-keyframes rotar{
   from{transform: rotatey(0deg); }

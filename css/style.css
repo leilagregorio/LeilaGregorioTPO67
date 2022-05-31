@@ -15,7 +15,7 @@ header{
     z-index: 30;
 }
 .trabajotit p{
-    font-family:Georgia, Times, 'Times New Roman', serif;
+    font-family:´'Georgia', 'Times', 'Times New Roman', 'serif';
     background-color: black;
 color: white;
     width: 100%;
@@ -96,38 +96,98 @@ hr{
 	font-family: 'News cycle';
   font-style: normal;
   font-size: 2vw;
-  font-display: swap;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	font-display: swap;
+
 }
 
 .contenido-total{
-    width: 100px;
-    margin: auto;
+    width: 1000px;
+    margin-bottom:50px;
     position: relative;
-    margin-top: 50px;
+		display:flex;
+		justify-content:center;
+		width:100%;
+		height:150px;
 		/*background-color: white;*/
   }
-
-.contenido-logos img{
-        width: 160px;
-				height: 60px; 
-				overflow: hidden;
-				position: absolute;
+.contenido-logos{
+	overflow:hidden;
+	position:relative;
 }
 
+.itemstotal ul{
+	display:flex;
+	height:100%;
+}
+.itemstotal ul li {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		margin-right: 10px;
+}
+.itemstotal img{
+	width: 100px;
+	height: 100px;
+}
+ 
+footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color azul y el hover */
+	background-image: url(/img/fondos/fndo.jpg);
+	background-size:contain;
+	color: white;
+	width: 100%;
+	height: 300px;
+}
+#datos{
+	margin-top: 20px;
+	float: left;
+	text-align: center;
+}
+#datos ul li{
+	list-style: none;
+	text-decoration: none;
+    color: wheat;
+}
+#redes{
+	float: none;
+	text-align: left;
+	height:30px;
+	
+}
+#redes ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 30px;
+    align-items: center;
+		
+}
+.contenidoweb{
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 300px;
+	float: left;
+	
+}
+.contenidoweb:hover{
+	text-decoration: none;
+	color: #fff;
+}
+.contenidoweb ul li{
+	margin-top: 20px;
+	list-style: none;
+	text-decoration: none;
+    color: white;
+}
 /*COMIENZA MEDIAQUERIES TABLETS*/
 
 @media all and (min-width:599px) and (max-width:1023px) {
 
-
-
 .contenedorgrid-3columnas{
-    display:grid;
     grid-template-columns:repeat(2,auto);
-    background-color: rgba(0, 0, 0, 0.137);/*lo utilice para ver cuanto abarca*/
-    max-width:1023px;
-		min-width:599px;
+	min-width:599px;
     }
-    
 #cuerpo p{
 		width:50vw;
 		border-radius:20px;
@@ -138,5 +198,114 @@ hr{
 .tuopinion a{
     margin-left:35vw;
 	 }
-
+    
+#datos{
+        margin-top: 50px;
+        height: 200px;
+        font-size: 2vh;
+    }
+#redes{ height:30px;}
+#redes ul li{ margin-left: 30px;  }
+.contenidoweb{
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: 2vh;
+}   
+.contenidoweb ul li{ margin-top: 20px;  }
 }
+/************************************/
+/* MOVIL*/
+@media all and (max-width:599px) {
+
+.contenedorgrid-3columnas{
+    display:grid;
+    grid-template-columns:repeat(1,auto);
+    background-color: rgba(0, 0, 0, 0.137);/*lo utilice para ver cuanto abarca*/
+    max-width:598px;
+    }
+    
+.entrada{
+    display: block;
+    width:100%;
+    margin-top: 1px;
+    margin-right: 0;
+    }
+.entrada ul li{
+    list-style: none;
+    font-size: 5vw;
+    font-style: italic;
+    }
+.img{
+    width: 200px;
+    height: 100px;
+        box-sizing: border-box;
+    
+    }
+    
+#cuerpo {
+    background-image: url(/img/fofno.jfif);
+    width: 100%;
+    height: 85vh;
+		background-attachment: fixed;
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size:cover;
+    }
+#cuerpo p{
+	background-color: rgba(250, 235, 215, 0.9);
+   	width:450px;
+   	border-radius:20px;
+    font-size: 4vw;
+    }
+.carouselbootstrap{
+    width: 50%;
+    }
+.carousel-item img{
+    width:400px!important;
+    height: 100px !important; 
+    } 
+.tuopinion a{
+    margin-left: 170px;
+    }
+    
+hr{
+  background-color: black;
+    }
+#patrocinadores{
+	margin: 0 10px;
+}
+#patrocinadores p{
+    font-size: 4vw;
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+  }
+
+.contenido-total{
+    width: 500px;
+    margin-bottom:50px;
+    position: relative;
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:150px;
+  } 
+footer{
+	width: 100%;
+	height: 300px;
+}
+#datos{
+	margin-top: 30px;
+    margin-left: 10px;
+	height: 300px;
+}
+.contenidoweb{
+
+	margin-top: 50px;
+	margin-left: 40px;
+}
+.contenidoweb ul li{
+	margin-top: 20px;
+}
+ }
+ /*******************************************/

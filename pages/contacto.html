@@ -1,13 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style-contacto.css">
+    <link rel="stylesheet" href="../ext/aos.js">
+    <link rel="stylesheet" href="../ext/aos.css">
+    <link rel="stylesheet" href="../js/index.js">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+   </style>
     <title>Contacto</title>
   </head>
   <body>
@@ -22,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">Nosotros</a>
@@ -45,17 +50,115 @@
         </div>
       </nav>
     </header>
-    <h1>Contactanos!</h1>
+    <section>
+      <div class="formulario">
+      <div class="titulo1">
+          <p>Queres hacernos una consulta?</p>
+          <p>Dejanos tus datos...</p>
+          </div>
+      <div class="contacto">
+        <form action="" name="formulario" method="get">
+          <p>Nombre<input type="text" name="nombre"id="nombre" placeholder="Leila" style="width:150px;margin-left: 7px;">        
+          Apellido <input type="text"name="apellido" id="apellido" placeholder="Gregorio"style="width: 150px;">
+          </p>      
+          <p>Edad  <input type="number" name="edad" id="edad" placeholder="25"style="width:150px;margin-left:21px;">
+          Telefono<input type="number" name="telefono" id="telefono" placeholder="cod de area+ su numero ej 11 22443354">
+          </p>
+          <p>Tipo de cliente:
+          <input type="radio" name="radio" value="1" style="width:10px;margin: 2px;">Nuevo
+          <input type="radio" name="radio" value="2"style="width:10px;margin: 2px;">Frecuente
+          </p>
+          <p>Si sabe que hay que realizar marquelo para que nos sea mas facil responder su consulta</p>
+          <input type="checkbox" name="Servicio" id="service" value="1"style="width:10px;margin-left:2px;">Tapa de cilindro
+          <input type="checkbox" name="Servicio" id="service" value="2"style="width:10px;margin-left:2px;">Adaptacion gnc
+          <input type="checkbox" name="Servicio" id="service" value="3"style="width:10px;margin-left:2px;">Encasquillado
+          <input type="checkbox" name="Servicio" id="service" value="4"style="width:10px;margin-left:2px;">Pruebas hidraulicas
+          <input type="checkbox" name="Servicio" id="service" value="5"style="width:10px;margin-left:2px;">Soldaduras o embujados
+          <input type="checkbox" name="Servicio" id="service" value="6"style="width:10px;margin-left:2px;">Balanceo Electronico
+          <input type="checkbox" name="Servicio" id="service" value="7"style="width:10px;margin-left:2px;">Pruebas de bomba de Aceite
+          <input type="checkbox" name="Servicio" id="service" value="8"style="width:10px;margin-left:2px;">Sistema de HELI-COIL
+          <input type="checkbox" name="Servicio" id="service" value="9"style="width:10px;margin-left:2px;">Reconstruccion de roscas
+          <input type="checkbox" name="Servicio" id="service" value="10"style="width:10px;margin-left:2px;">Rectificacion de cigueñales
+          <input type="checkbox" name="Servicio" id="service" value="11"style="width:10px;margin-left:2px;">Otro... /No lo sé
+          <p>Dejenos su mensaje aqui:</p>
+          <input type="textarea" name="mensajelarge" id="mensaje" placeholder="Ingrese su mensaje aqui"style="width:400px;height: aut;"></p>
+          <br>
+          <br>
+          <input type="submit" name="btn" id="btn"value="Enviar" style="text-align:center;width: 100px;margin-left: 350px;margin-bottom: 40px;">
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        </form>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      
+    </div>
+  </div>
+      <article class="mapa">
+        <p>Nos podes encontrar personalmente en...</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6512684914887!2d-58.6262068!3d-34.638252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f86b0b7d3e56974!2sRectificadora%20Los%20Amigos!5e0!3m2!1ses-419!2sar!4v1654013620812!5m2!1ses-419!2sar" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+      <aside class="publicidad"></aside>
+    </section>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+
+
+
+
+ <footer>
+       <div id="redes">
+          <ul>
+        <li><i class="fa-brands fa-facebook-f"><a href="www.facebook.com"></a></i></li>
+        <li><i class="fa-brands fa-instagram"><a href="www.instagram.com"></a></i></li>
+        <li><i class="fa-brands fa-youtube"><a href="www.youtube.com"></a></i></li>
+        <li><i class="fa-brands fa-twitter"><a href="www.twitter.com"></a></i></li>
+          </ul>
+         </div>
+         <div id="datos">
+           <ul>
+            <li><p>Rectificadora Los Amigos</p></li>
+            <li><p>Juan Manuel de Rosas 321</p></li>
+            <li><p>Telefono: 44890690 </p></li>
+            <li><a id="wpp"href="https://api.whatsapp.com/send?phone=123456789&text=mensaje">Whatsapp: 123456789</a></li>
+            <li><a href="mailto:leeigregorio@gmail.com">leeigregorio@gmail.com</a></li>
+           </ul>
+           </div>
+    </footer>
+
+     
+    
+    <script>
+      (function(){
+    var formulario=document.getElementsByName('formulario')[0],
+    elementos=formulario.elements,
+    boton=document.getElementsByName('btn');
+    var validarNombre=function(e){
+        if(formulario.nombre.value==0){
+            alert("Por favor completa con tu nombre");
+            e.preventdefault();
+        }
+    };
+    var validarTelefono=function(e){
+     if(formulario.telefono.value==0){
+         alert("Por favor completa con tu telefono");
+         e.preventdefault();
+     }
+ };
+var validarRadio=function(e){
+    if(formulario.radio[0].checked==true || formulario.radio[1].checked==true){ 
+    }else{
+        alert("Por favor completa el tipo de cliente");
+        e.preventdefault();
+    }
+  };
+    var validar=function(e){
+     validarNombre(e);
+     validarRadio(e);
+     validarTelefono(e);
+    };
+    formulario.addEventListener('submit', validar);
+
+    if(formulario.btn.clickon==true){ /*no funciona, falta practica*/
+    alert("gracias por ponerse en contacto con nosotros, muy pronto nos estaremos comunicando con usted");
+   }
+}()) /*valida todo, pero se borra todo lo que escribiste cuando  envias y te falta un item*/
+    </script>
   </body>
 </html>

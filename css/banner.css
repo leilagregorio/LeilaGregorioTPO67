@@ -37,7 +37,7 @@
     font-family: 'Ballet', cursive; 
 }
 .sombra hr{
-    background-color: rgba(250, 235, 215, 0.712);
+    background-color: rgba(255, 235, 215, 0.712);
 }
 
 .sombra-links{
@@ -53,7 +53,7 @@
     padding: 10px;
     margin-bottom: 10px;
     width: 100%;
-    background-color: rgba(250, 235, 215, 0.336);
+    background-color: rgba(310, 235, 215, 0.336);
 }
 .sombra-links a:hover{
     background-color: rgb(88, 82, 70);
@@ -112,101 +112,94 @@
     animation: movimiento 1s ;
     animation-delay:1s ;
 }
-.contenido-logos{
-    width: 100px;
-    position: absolute;
-    animation: rotar 10s infinite ease-in;
-	transform-style:preserve-3d;
-    }
-.contenido-logos:hover{ 
+
+
+	 
+.itemstotal:hover{ 
         animation-play-state: paused;
     }
-.contenido-logos img:nth-child(1){
-  transform: rotateY(18deg) translateZ(500px);
-          }
-.contenido-logos img:nth-child(2){
-  transform: rotateY(36deg) translateZ(500px);
+
+.itemstotal{
+animation: rotar 10s linear infinite;
     }
-.contenido-logos img:nth-child(3){
-  transform: rotateY(54deg) translateZ(500px);
+/*  comienza MEDIAQUERIES  tablet*/
+@media all and (min-width:599px) and (max-width:1023px) {
+    .contenido_ppal{
+        height: 100vh;     
+        width:97vw;
+    }
+    .sombra{
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(250, 235, 215, 0.87);
+        border-radius: 20px;
+    }
+    #titppal{font-size: 4vw; }
+    .sombra p{
+        font-size: 8vw;
+        margin-bottom: 10px;
+    }
+    .sombra hr{
+        background-color: rgb(255, 235, 215);
+    }
+    
+    .sombra-links{ margin-bottom: 10px; }
+    .sombra-links a{ width: 100%; }
+    .sombra-links a:hover{
+        background-color: rgb(250, 206, 119);
+        color: rgb(8, 6, 6);
+    }
+    .sombra-links a:active{
+        background-color: rgb(181, 164, 240);
+        color: rgb(5, 5, 5);
         }
-.contenido-logos img:nth-child(4){
-  transform: rotateY(72deg)  translateZ(500px);
-    }
-.contenido-logos img:nth-child(5){
-  transform: rotateY(90deg)  translateZ(500px);
-    }
-.contenido-logos img:nth-child(6){
-  transform: rotateY(108deg)   translateZ(500px);
-    }
-.contenido-logos img:nth-child(7){
-  transform: rotateY(126deg)  translateZ(500px);
+    
 }
-.contenido-logos img:nth-child(8){
-  transform: rotateY(144deg)  translateZ(500px);
+/******************************/
+/*fin media tablet, inicio media movil*/
+@media all and (max-width:599px) {
+.contenido_ppal{
+    height: 100vh;
+    width:98vw;
 }
-.contenido-logos img:nth-child(9){
-  transform: rotateY(180deg)  translateZ(500px);
+.sombra{
+    padding: 70px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(71, 69, 67, 0.63);
+    border-radius: 20px;
 }
-.contenido-logos img:nth-child(10){
-  transform: rotateY(198deg)  translateZ(500px);
-} 
-.contenido-logos img:nth-child(11){
-  transform: rotateY(216deg)  translateZ(500px);
-} 
-.contenido-logos img:nth-child(12){
-  transform: rotateY(234deg)  translateZ(500px);
-} 
-.contenido-logos img:nth-child(13){
-  transform: rotateY(252deg) translateZ(500px);
-      } 
-.contenido-logos img:nth-child(14){
-  transform: rotateY(270deg)  translateZ(500px);
-    } 
-.contenido-logos img:nth-child(15){
-  transform: rotateY(288deg) translateZ(500px);
-} 
-.contenido-logos img:nth-child(16){
-  transform: rotateY(306deg)  translateZ(500px);
-  } 
-.contenido-logos img:nth-child(17){
-  transform: rotateY(324deg)  translateZ(500px);
-  } 
-.contenido-logos img:nth-child(18){
-  transform: rotateY(342deg)  translateZ(500px);
-    } 
-.contenido-logos img:nth-child(19){
-    transform: rotateY(360deg)	translateZ(500px);
-    } 
-.contenido-logos img:nth-child(20){
-    transform: rotateY(162deg) translateZ(500px);
-} 
-.contenido-logos img:nth-child(21){
-    transform: rotateY(0deg) translateZ(500px);
-    } 
-      
+#titppal{
+    font-size: 4vw;
+    margin-bottom: 10px;
+    color: rgb(216, 213, 210);
+    
+}
+.sombra p{
+    font-size: 8vw;
+    margin-bottom: 10px;
+    color: rgb(216, 208, 208);
+}
+.sombra hr{
+    background-color: rgba(255, 235, 215, 0.712);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sombra-links{
+    position: relative;
+    margin-bottom: 30px;
+}
+.sombra-links a{
+    display: inline-block;
+    color: rgb(243, 241, 241);
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: rgba(310, 235, 215, 0.336);
+}                                                                                 
+}
+/************************/

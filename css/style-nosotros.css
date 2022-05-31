@@ -4,57 +4,158 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-img{
-    max-width: 100%;
+header{
+    position: sticky;
+    top: 1px;
+    z-index: 30;
 }
-h2{
-    font-size:4rem;
+.seccion1 {
+    background-image: url(../img/fondos/Automatización.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.titulos h2{
+    font-size:4vw;
+    font-family:'indie flower';
+    text-align: center;
+    color: yellow;
+
 }
 .contenedor-trescolumnas {
-    max-width:960px;
+    max-width:1024px;
     width: 95%;
-    margin: 0 auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    column-gap: 10px;
+    row-gap: 10px;
 
 }
 .entrada{
+    background-color: rgba(250, 235, 215, 0.664);
+    border-radius: 40px;
     display:inline-block;
-    background-color:lightblue;
-    color:white;
     padding: 10px 20px;
     text-align:center;
 
 }
-.entrada a{
-    display:inline-block;
-    background-color:lightblue;
-    color:white;
+.entrada h2{
+    font-size: 40px;
+    font-family: 'indie flower';
+    text-align: center;
+}
+.entrada p{
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-
-
+    text-align: justify;
 }
-
-
-
-
-/*MEDIA QUERIES movil*/
-@media (min-width:599px) {
-    .contenedor-trescolumnas{
-        display: grid;
-        grid-template-columns:repeat(3,auto);
-        column-gap: 1rem;
-        row-gap: 1rem;
+.entrada img{
+    width: 180px;
+    height: 180px;
+    border-radius: 30px;
+}
+footer{
+	background-image: url(../img/fondos/fndo.jpg);
+	background-size:contain;
+	color: white;
+	width: 100%;
+	height: 200px;
+}
+#datos{
+	margin-top: 20px;
+	text-align: center;
+}
+#datos ul li p{
+    display: inline;
+	list-style: none;
+	text-decoration: none;
+}
+#redes{ 
+	text-align: center;
+    margin-top: 50px;
+	
+}
+#redes ul li{
+	display: inline;
+	list-style: none;
+	margin-left: 30px;
+	
+	
+}
+/*media queries TABLETA*/
+@media all and (min-width:599px) and (max-width:1023px){
+    .titulos h2{
+        font-size:6vw;
+        font-family:'indie flower';
+        text-align:left;
+        color: rgb(190, 45, 130);
+    
     }
-} /*FIN MEDIAQUERIES*/
-.footer{
-    display: block;
-    background-color:peru;
-    height: auto;
-
+    .contenedor-trescolumnas {
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns:repeat(2,auto);
+        column-gap: 10px;
+        row-gap: 10px;
+    
+    }
+    .entrada{
+        background-color: rgba(228, 133, 202, 0.664);
+        border-radius: 40px;
+        display:inline-block;
+        padding: 10px 20px;
+    
+    }
+    .entrada h2{
+        font-size: 30px;
+        font-family: 'indie flower';
+        text-align: center;
+    }
+    .entrada p{
+        padding: 10px 20px;
+        text-decoration: none;
+        font-family: 'indie flower';
+        font-style: italic;
+        text-align: justify;
+    }
+    .entrada img{
+        width: 180px;
+        height: 180px;
+        border-radius: 30px;
+    }
 }
+/*MEDIA QUERIES movil*/
+@media all and (max-width:599px) {
+    
+    .titulos h2{
+        font-size:6vw;
+        font-family:'indie flower';
+        text-align:left;
+        color: rgb(67, 106, 165);
+    
+    }
+    .contenedor-trescolumnas {
+        max-width:599px;
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns:repeat(1,auto);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .entrada{
+        background-color: rgba(129, 148, 230, 0.664);
+        border-radius: 40px;
+        display:inline-block;
+        padding: 10px 20px;
+        text-align:center;
+    
+    }
+    .entrada h2{font-size: 30px;  }
+} /*FIN MEDIAQUERIES*/
 
 
 

@@ -46,7 +46,7 @@ color: white;
     }
 .entrada ul li{
     list-style: none;
-    font-size: 2vw;
+    font-size: 3vw;
     font-style: italic;
     }
 .img{
@@ -218,52 +218,47 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 .contenedorgrid-3columnas{
     display:grid;
     grid-template-columns:repeat(1,auto);
-    background-color: rgba(0, 0, 0, 0.137);/*lo utilice para ver cuanto abarca*/
-    max-width:598px;
+   width: 90%;
     }
     
 .entrada{
     display: block;
-    width:100%;
+    width:90%;
     margin-top: 1px;
-    margin-right: 0;
     }
-.entrada ul li{
-    list-style: none;
-    font-size: 5vw;
-    font-style: italic;
-    }
+
 .img{
     width: 200px;
     height: 100px;
-        box-sizing: border-box;
+    box-sizing: border-box;
     
     }
     
 #cuerpo {
     background-image: url(/img/fofno.jfif);
-    width: 100%;
+    width: 98%;
     height: 85vh;
-		background-attachment: fixed;
-		background-position:center;
-		background-repeat: no-repeat;
-		background-size:cover;
+	background-attachment: fixed;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size:cover;
+
     }
 #cuerpo p{
 	background-color: rgba(250, 235, 215, 0.9);
-   	width:450px;
+   	width:70%;
    	border-radius:20px;
     font-size: 4vw;
     }
 .carouselbootstrap{
-    width: 50%;
+    width: 70%;
     }
 .carousel-item img{
     width:400px!important;
     height: 100px !important; 
     } 
 .tuopinion a{
-    margin-left: 170px;
+    margin-left:30%
     }
     
 hr{

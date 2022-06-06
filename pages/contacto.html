@@ -57,6 +57,7 @@
           <p>Dejanos tus datos...</p>
           </div>
       <div class="contacto">
+        <div class="resultado">
         <form action="" name="formulario" method="get">
           <p>Nombre<input type="text" name="nombre"id="nombre" placeholder="Leila" style="width:150px;margin-left: 7px;">        
           Apellido <input type="text"name="apellido" id="apellido" placeholder="Gregorio"style="width: 150px;">
@@ -85,9 +86,9 @@
           <br>
           <br>
           <input type="submit"  name="btn" id="btn"value="Enviar" style="text-align:center;width:40%;margin-left:auto;margin-bottom: 40px;">
-
+        
         </form>
-
+      </div>
       
     </div>
   </div>
@@ -133,6 +134,7 @@
         if(formulario.nombre.value==0){
             alert("Por favor completa con tu nombre");
             e.preventdefault();
+            
         }
     };
     var validarTelefono=function(e){
@@ -154,9 +156,22 @@ var validarRadio=function(e){
      validarTelefono(e);
     };
     formulario.addEventListener('submit', validar);
-    const boton = formulario.querySelector("btn");
-    boton.onclick = () => alert("gracias por ponerse en contacto con nosotros, muy pronto nos estaremos comunicando con usted");
-}()) /*valida todo, pero se borra todo lo que escribiste cuando  envias y te falta un item*/
+    formulario.btn.onclick = () => alert("gracias por ponerse en contacto con nosotros, muy pronto nos estaremos comunicando con usted");
+    
+    if(typeof(Storage)!== "undefined"){
+    localStorage.setItem("Nombre", this.nombre);
+    localStorage.setItem("Apellido", this.apellido);
+    localStorage.setItem("Edad",formulario.edad);
+    localStorage.setItem("Cliente",formulario.radio.value);
+    localStorage.setItem("Servicio",formulario.service.value);
+    document.getElementById("resultado").innerHTML=localStorage.getItem("Nombre");
+    document.getElementById("resultado").innerHTML=localStorage.getItem("Apellido");
+    document.getElementById("resultado").innerHTML=localStorage.getItem("Edad");
+    document.getElementById("resultado").innerHTML=localStorage.getItem("Cliente");
+    document.getElementById("resultado").innerHTML=localStorage.getItem("Servicio");
+
+   }
+  }()) /*valida todo, pero se borra todo lo que escribiste cuando  envias y te falta un item*/
     </script>
     <script src="../ext/js/bootstrap.bundle.min.js"></script>
     <script src="../ext/js/bootstrap.min.js"></script>

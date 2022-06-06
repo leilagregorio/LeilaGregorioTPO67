@@ -84,7 +84,7 @@
           <input type="textarea" name="mensajelarge" id="mensaje" placeholder="Ingrese su mensaje aqui"style="width:400px;height: aut;"></p>
           <br>
           <br>
-          <input type="submit" name="btn" id="btn"value="Enviar" style="text-align:center;width:40%;margin-left:auto;margin-bottom: 40px;">
+          <input type="submit"  name="btn" id="btn"value="Enviar" style="text-align:center;width:40%;margin-left:auto;margin-bottom: 40px;">
 
         </form>
 
@@ -93,7 +93,7 @@
   </div>
       <article class="mapa">
         <p>Nos podes encontrar personalmente en...</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6512684914887!2d-58.6262068!3d-34.638252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f86b0b7d3e56974!2sRectificadora%20Los%20Amigos!5e0!3m2!1ses-419!2sar!4v1654013620812!5m2!1ses-419!2sar" width="400" height="500" style="border:0;margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6512684914887!2d-58.6262068!3d-34.638252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f86b0b7d3e56974!2sRectificadora%20Los%20Amigos!5e0!3m2!1ses-419!2sar!4v1654013620812!5m2!1ses-419!2sar" width="auto" height="auto" style="border:0;margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
       <aside class="publicidad"></aside>
     </section>
@@ -154,10 +154,8 @@ var validarRadio=function(e){
      validarTelefono(e);
     };
     formulario.addEventListener('submit', validar);
-
-    if(formulario.btn.clickon==true){ /*no funciona, falta practica*/
-    alert("gracias por ponerse en contacto con nosotros, muy pronto nos estaremos comunicando con usted");
-   }
+    const boton = formulario.querySelector("btn");
+    boton.onclick = () => alert("gracias por ponerse en contacto con nosotros, muy pronto nos estaremos comunicando con usted");
 }()) /*valida todo, pero se borra todo lo que escribiste cuando  envias y te falta un item*/
     </script>
     <script src="../ext/js/bootstrap.bundle.min.js"></script>

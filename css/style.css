@@ -92,8 +92,8 @@ hr{
 }
 #patrocinadores p{
 	font-family: 'News cycle';
-  font-style: normal;
-  font-size: 2vw;
+    font-style: normal;
+    font-size: 2vw;
 	display:flex;
 	flex-flow:column;
 	align-items:center;
@@ -237,16 +237,18 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 #cuerpo {
     background-image: url(/img/fofno.jfif);
     width: 98%;
-    height: 85vh;
+    height: 450px;
 	background-attachment: fixed;
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size:cover;
 
+
     }
 #cuerpo p{
 	background-color: rgba(250, 235, 215, 0.9);
    	width:70%;
+    margin-top:10px;
    	border-radius:20px;
     font-size: 4vw;
     }

@@ -53,38 +53,36 @@
       </nav>
     </header>
     <section>
-      <div class="formulario"id="formulario">
-      <div class="titulo1">
+    <article id="boddy">
+      <div class="contenedor">
+      <div class="cabecera">
           <p>Queres hacernos una consulta?</p>
           <p>Dejanos tus datos...</p>
-          </div>
-      <div class="contacto">
-        <div class="resultado"> <!--hacer con vue un formulario in formularios?? data nombre/apellido/edad/telefono/tipocliente/checkbox/msj/boton-->
-        <form action="" name="formulario" method="get">
+        </div>
+      <form action="" id="formulario" method="get"> 
           <div class="form-control">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre"id="nombre" placeholder="Leila"> <br> 
-          <p></p>
-         </div>  
-         <div class="form-control">
-          <label for="apellido">Apellido</label>   
-          <input type="text"name="apellido" id="apellido" placeholder="Gregorio"> <br>    
-          <p></p> 
-         </div>
-         <div class="form-control">
-          <label for="edad">Edad</label>
-          <input type="number" name="edad" id="edad" placeholder="25"> <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Leila Gregorio">
+            <p></p>
+          </div>  
+        
+          <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="bartolito@gmail.com">
           <p></p>
           </div>
+
           <div class="form-control">
           <label for="telefono">Telefono</label>
-          <input type="number" name="telefono" id="telefono" placeholder="11 22443354">
+          <input type="number" id="telefono" placeholder="11 22443354">
           <p></p>
           </div>
+
           <div class="form-control">
-          <label for="mensaje">Dejanos tu mensaje aqui:</labe>
-          <input type="textarea" name="mensajelarge" id="mensaje" placeholder="Ingrese su mensaje aqui"> 
+          <label for="mensaje">Dejanos tu mensaje aqui:</label>
+          <input type="textarea" id="mensaje" placeholder="Ingrese su mensaje aqui" required> 
           </div>
+
           <br>
           <br>
         <button id="btn">Enviar</button>        
@@ -98,8 +96,8 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6512684914887!2d-58.6262068!3d-34.638252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8f86b0b7d3e56974!2sRectificadora%20Los%20Amigos!5e0!3m2!1ses-419!2sar!4v1654013620812!5m2!1ses-419!2sar" width="auto" height="auto" style="border:0;margin: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
       <aside class="publicidad"></aside>
+    </article>
     </section>
-
 
 
 
@@ -126,7 +124,7 @@
     
    
      <script src="https://kit.fontawesome.com/324cc2420b.js" crossorigin="anonymous"></script>
-     <script src="../js/localStorage.js"></script>
+     <script src="../js/localStore.js"></script>
      <script src="../ext/js/bootstrap.bundle.min.js"></script>
      <script src="../ext/js/bootstrap.min.js"></script>
      <script src="../ext/aos.js"></script>

@@ -6,7 +6,7 @@
 }
 
 body{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Caveat', cursive;
    }
 
 header{
@@ -15,7 +15,6 @@ header{
     z-index: 30;
 }
 .trabajotit p{
-    font-family:´'Georgia', 'Times', 'Times New Roman', 'serif';
     background-color: rgba(0, 0, 0, 0.76);
     color: white;
     width: 100%;
@@ -190,7 +189,7 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 		width:50vw;
 		border-radius:20px;
     font-size: 4vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     text-align: center;
     }
 .tuopinion a{

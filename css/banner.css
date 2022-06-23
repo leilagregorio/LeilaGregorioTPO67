@@ -34,7 +34,7 @@
     font-size: 8vw;
     margin-bottom: 10px;
     font-style: italic;
-    font-family: 'Ballet', cursive; 
+    font-family: 'Ballet', cursive; /*titulo los amigos en una cursiva muy exagerada*/
 }
 .sombra hr{
     background-color: rgba(255, 235, 215, 0.712);
@@ -86,7 +86,7 @@
  }
 
  .trabajotit p {
-    animation: opacity 10s; /*efecto parpadeante*/
+    animation: opacity 10s infinite; /*efecto parpadeante*/
  }
  
  .entrada{
@@ -109,14 +109,15 @@
 }
 
 
-	 
+.itemstotal{
+animation: rotar 10s linear infinite;
+}
+
 .itemstotal:hover{ 
         animation-play-state: paused;
     }
 
-.itemstotal{
-animation: rotar 10s linear infinite;
-    }
+    
 /*  comienza MEDIAQUERIES  tablet*/
 @media all and (min-width:599px) and (max-width:1023px) {
     .contenido_ppal{

@@ -189,7 +189,7 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 		width:50vw;
 		border-radius:20px;
     font-size: 4vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     }
 .tuopinion a{

@@ -7,10 +7,9 @@
 
 body{
     background-image: url(../img/fondos/fno.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', 'sans-serif';
  }
 header{
     position: sticky;
@@ -111,14 +110,17 @@ header{
 	font-family: 'Raleway';
 	font-size: 2vw;
 	background-color:rgba(0, 0, 0, 0.61);
+	box-shadow: 15px 15px 10px -5px rgba(255,255,255,0.5);
 	color:#fff;
 	 }
 .mapa iframe{
 width:100%;
 height: 300px;
 margin: 20px;
+box-shadow: 20px 30px 10px -10px rgba(255,255,255,0.5);
 
  }
+
 
 footer{ 
 	background-image: url(../img/fondos/fndo.jpg);
@@ -189,7 +191,7 @@ footer{
 		border-bottom: 1px solid #f0f0f0;
 		padding: 10px 40px;
 		width: 100%;
-		height: 80px;
+		height: 70px;
 		border-radius: 5px;
 	}
 	.cabecera p{
@@ -203,7 +205,7 @@ footer{
 	}
 	.form-control{
 		margin-bottom: 5px;
-		padding-bottom: 5px;
+		padding-bottom: 15px;
 		position: relative;
 		width:95%;
 		height:auto;
@@ -241,6 +243,7 @@ footer{
 		width:100%;
 		padding: 2px;
 		font-size:3vw;
+		margin-top: -45px;
 	}
 	.form-control p{
 		visibility:hidden;
@@ -255,10 +258,10 @@ footer{
 	
 	
 	.mapa p{
-		width: 95%;
+		width: 100%;
 		margin: 20px;
 		font-family: 'Raleway';
-		font-size: 2vw;
+		font-size: 20px;
 		background-color:rgba(0, 0, 0, 0.61);
 		color:#fff;
 		 }
@@ -266,69 +269,161 @@ footer{
 	width:100%;
 	height: 300px;
 	margin: 20px;
-	
 	 }
+
 	
-	footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color azul y el hover */
+footer{ 
 		background-image: url(../img/fondos/fndo.jpg);
-		background-size:contain;
+		background-size:cover;
 		color: white;
 		width: 100%;
 		height:80px;
 		position: fixed;
-		margin: 1px;
+		margin-top: 90px;
 	}
-	#datos{
-		margin-top: 20px;
-		font-size:1.5vw;
-		float:right;	
-	}
-	#datos ul li {
-		list-style:none;
-		display: inline;
-	}
-	#datos ul li a{
-		color: #fff;
-		text-decoration: none;
-		margin: 5px;
-	}
-	#redes{
+#datos{
 		margin-top: 20px;
 		font-size:2vw;
+		margin-top: 10px;
+		float:right;	
+	}
+
+#redes{
+		margin-top: 20px;
+		font-size:2vw;
+		margin-top: 10px;
 		float:left;
 	}
-	#redes ul li {
-		list-style:none;
-		display: inline;
-	}
-	#redes ul li a{
-		color: #fff;
-		text-decoration: none;
-		margin: 10px;
-	}
+	
  }
  /******************MOVIL***********************/
  @media all and (max-width: 599px) {
 
-	.formulario{
-		margin-top: 20px;
-		width:90%;
-		height:800px;
+	
+	#boddy{
+		width: 90%;
+		margin: 20px;
+		display: grid;
+		grid-template-columns:repeat(1,auto);
+		grid-column: center;
+	
 	}
-	.titulo1 p{
-		margin-top: 10px;
-		width: 70%;
-		height: auto;
+	.contenedor{
+		background: rgba(0, 0, 0, 0.527);
+		border-radius:20px;
+		box-shadow: 20px 30px 10px -10px rgba(255,255,255,0.5);
+		width:98%;
+		height: 450px;
+	
 	}
-	.contacto input{
+	.cabecera{
+		background-color: rgb(238, 238, 178);
+		color: #000;
+		text-align: center;
+		border-bottom: 1px solid #f0f0f0;
+		padding: 10px 40px;
+		width: 100%;
+		height: 70px;
+		border-radius: 5px;
+	}
+	.cabecera p{
+		font-family: 'Caveat';
+		font-size:15px;
+	}
+	#formulario{
+		padding: 3px 2px;
+		width: 95%;
+		height:auto;
+	}
+	.form-control{
+		margin-bottom: 5px;
+		padding-bottom: 15px;
+		position: relative;
+		width:95%;
+		height:auto;
+	}
+	.form-control label{
 		display: inline;
-		top: 1px;
+		font-size: 2.5vw;
+		width: 100%;
 	}
-	.mapa {
+	.form-control input{
+		border: none;
+		background-color: rgba(0, 0, 0, 0.267);
+		display:block;
+		font-family:'indie flower';
+		font-size:2.8vw;
+		padding:2px;
+		width:95%;
+	}
+	.form-control input:focus{
+		outline: none;
+		border: 3px solid rgb(143, 149, 231);
+	}
+	.form-control.ok input {
+		border: 2px solid rgb(44,199,65);
+	}
+	.form-control.falla input{
+		border:2px solid rgb(red, 255, 255);
+	}
+	#btn{
+		background-color: rgb(228, 212, 122);
+		border: 3px solid rgb(97, 110, 20);
+		border-radius:10px;
+		color:#000;
+		display:block;
+		width:100%;
+		padding: 2px;
+		font-size:3.5vw;
+		margin-top: -45px;
+	}
+	.form-control p{
+		visibility:hidden;
+		position:absolute;
+		font-size:13px;
+		text-align: right;
+	}
+	.form-control.falla p{
+		visibility: visible;
+		color: red;
+	}
+	
+	
+	.mapa p{
+		width: 100%;
+		font-family: 'Raleway';
+		font-size: 20px;
+		background-color:rgba(0, 0, 0, 0.61);
+		color:#fff;
+		 }
+	.mapa iframe{
+	width:100%;
+	height:300px;
+	margin: 20px;
+	 }
 
-		margin-top: 100px;
-		width: 500px;
-		height: auto;
-		margin-left:20px;}
+	
+footer{ 
+		background-image: url(../img/fondos/fndo.jpg);
+		background-size:cover;
+		position: relative;
+		color: white;
+		width: 98%;
+		height:80px;
 
+	}
+#datos{
+		margin-top: 20px;
+		font-size:2.6vw;
+		margin-top: 5px;
+		float:right;	
+	}
+
+#redes{
+		margin-top: 20px;
+		font-size:2.6vw;
+		margin-top:4px;
+		float:left;
+	}
+	
   }

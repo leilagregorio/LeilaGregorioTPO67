@@ -120,7 +120,7 @@ margin: 20px;
 
  }
 
-footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color azul y el hover */
+footer{ 
 	background-image: url(../img/fondos/fndo.jpg);
 	background-size:contain;
 	color: white;
@@ -170,7 +170,7 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 		width: 90%;
 		margin: 20px;
 		display: grid;
-		grid-template-columns:repeat(1,auto);
+		grid-template-columns:repeat(2,auto);
 		grid-column: center;
 	
 	}
@@ -194,7 +194,7 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 	}
 	.cabecera p{
 		font-family: 'Caveat';
-		font-size:1.2vw;
+		font-size:2vw;
 	}
 	#formulario{
 		padding: 3px 2px;
@@ -210,21 +210,21 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 	}
 	.form-control label{
 		display: inline;
-		font-size:1vw;
+		font-size: 2vw;
 		width: 100%;
 	}
 	.form-control input{
 		border: none;
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0, 0, 0, 0.267);
 		display:block;
 		font-family:'indie flower';
-		font-size:1vw;
+		font-size:2.2vw;
 		padding:2px;
 		width:95%;
 	}
 	.form-control input:focus{
 		outline: none;
-		border: 2px solid rgb(143, 149, 231);
+		border: 3px solid rgb(143, 149, 231);
 	}
 	.form-control.ok input {
 		border: 2px solid rgb(44,199,65);
@@ -234,18 +234,18 @@ footer{ /*hay algo que tengo mal porque no pude sacarles a los links el color az
 	}
 	#btn{
 		background-color: rgb(218, 236, 149);
-		border: 2px solid rgb(59, 197, 31);
-		border-radius:2px;
-		color:white;
+		border: 3px solid rgb(59, 197, 31);
+		border-radius:10px;
+		color:#000;
 		display:block;
 		width:100%;
 		padding: 2px;
-		font-size:2vw;
+		font-size:3vw;
 	}
 	.form-control p{
 		visibility:hidden;
 		position:absolute;
-		font-size: small;
+		font-size:10px;
 		text-align: right;
 	}
 	.form-control.falla p{
